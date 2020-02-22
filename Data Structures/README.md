@@ -14,20 +14,20 @@ re-prompt for the user’s name.  This flow should look like the following:
 	Hello, Rachel Min!			########
 
 Answer:
-import java.util.Scanner;
+	import java.util.Scanner;
 
-public class Main {
-  public static void main(String[] args) {
-    greetings();
-    }
-  public static void greetings(){
-    Scanner a = new Scanner(System.in);
-    System.out.println("What is your name? ");
-    String name = a.nextLine();
-      while(name.isEmpty()){
-        System.out.println("What is your name?");
-        name = a.nextLine();
-      }
-     System.out.println("Hello, "+name+"!");
-    }
-}
+	public class Main {
+	  public static void main(String[] args) {
+	    greetings();
+	    }
+	  public static void greetings(){
+	    Scanner a = new Scanner(System.in);
+	    System.out.println("What is your name? ");
+	    String name = a.nextLine();
+	      while(name.isEmpty()){
+	        System.out.println("What is your name?");
+	        name = a.nextLine();
+	      }
+	     System.out.println("Hello, "+name+"!");
+	    }
+	}
